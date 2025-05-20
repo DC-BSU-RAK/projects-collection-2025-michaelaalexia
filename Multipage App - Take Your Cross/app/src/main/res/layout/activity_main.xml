@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#570000"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/adamina"
+        android:text="Take Your Cross"
+        android:textAlignment="center"
+        android:textColor="#E5C687"
+        android:textSize="65sp"
+        app:layout_constraintBottom_toTopOf="@+id/journalButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/journalButton"
+        android:layout_width="351dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/saveEntButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/journal" />
+
+    <ImageButton
+        android:id="@+id/saveEntButton"
+        android:layout_width="351dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/aboutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/saved" />
+
+    <ImageButton
+        android:id="@+id/aboutButton"
+        android:layout_width="351dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/about" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
